@@ -187,16 +187,51 @@
 
     <!-- Return Statements -->
     <?php
-        function qube($num){
-            return $num * $num * $num;
-        }
-        echo qube(8);
+        // function qube($num){
+        //     return $num * $num * $num;
+        // }
+        // echo qube(8);
     ?>
 
-
     <!-- If Statements -->
+    <?php
+        // $gotMail = false;
+        // $fromNatalie;
+        // if ($gotMail) {
+        //     $fromNatalie = true;
+        // }
+        // if ($gotMail && $fromNatalie){
+        //     echo "You got mail from Natalie";
+        // } else if (!$gotMail) {
+        //     echo "No mail";
+        // } else if ($gotMail || $fromNatalie) {
+        //     echo "You got mail, but it's not from Natalie";
+        // }
+    ?>
+
     <!-- If Statements (con't) -->
+    <?php
+        // to make afunction that does that: echo max(3, 6)
+        // function maxNum($num1, $num2, $num3){
+        //     if ($num1 < $num2){
+        //         if ($num3 < $num2){
+        //             return $num2;    
+        //         } else {
+        //             return $num3;
+        //         }
+        //     } else {
+        //         if ($num3 < $num1){
+        //             return $num1;    
+        //         } else {
+        //             return $num3;
+        //         }
+        //     }
+        // }
+        // echo maxNum(90, 30, 15)
+    ?>
+
     <!-- Building a Better Calculator -->
+    
     <!-- Switch Statements -->
     <!-- While Loops -->
     <!-- For Loops -->
