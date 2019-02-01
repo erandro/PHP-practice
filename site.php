@@ -231,10 +231,74 @@
     ?>
 
     <!-- Building a Better Calculator -->
-    
+    <!-- <form action="site.php" method="post">
+        First Number: <input type="numbr" step="0.1" name="num1"> <br>
+        OP: <input type="text" name="op"> <br>
+        Second Number: <input type="numbr" name="num2"> <br>
+        <input type="submit">
+    </form> -->
+    <?php
+        // $num1 = $_POST["num1"];
+        // $num2 = $_POST["num2"];
+        // $op = $_POST["op"];
+
+        // if ($op==="+") {
+        //     echo $num1 + $num2;
+        // } else if ($op==="-") {
+        //     echo $num1 - $num2;
+        // } else if ($op==="+") {
+        //     echo $num1 - $num2;
+        // } else if ($op==="*") {
+        //     echo $num1 * $num2;
+        // } else if ($op==="/") {
+        //     echo $num1 / $num2;
+        // } else { echo "Invalid Oparator";}
+    ?>
+
     <!-- Switch Statements -->
+    <!-- <form action="site.php" method="post">
+        <input type="text" name="grade"> <br>
+        <input type="submit">
+    </form> -->
+    <?php
+        // $grade = $_POST["grade"];
+        // switch($grade){
+        //     case "A":
+        //         echo "Good job";
+        //         break;
+        //     case "B":
+        //         echo "You can do better";
+        //         break;
+        //     case "C":
+        //         echo "Ohh man...";
+        //         break;
+        //     case "F":
+        //         echo "Fuck man, you such";
+        //         break;
+        //     default:
+        //         echo "Invalid Grade";
+        // }
+    ?>
+
     <!-- While Loops -->
+    <?php
+        // $index = 1;
+        // while($index<=5){
+        //     echo "$index <br>";
+        //     $index++;
+        // }
+        // do {
+        //     echo "$index <br>";
+        //     $index++;
+        // } while($index<=5);
+    ?>
+
     <!-- For Loops -->
+    <?php
+        for($i=1; $i<=5;$i++){
+            echo "$i <br>";
+        }
+    ?>
     <!-- Comments -->
     <!-- Including HTML -->
     <!-- Include: PHP -->
