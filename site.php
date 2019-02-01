@@ -295,12 +295,29 @@
 
     <!-- For Loops -->
     <?php
-        for($i=1; $i<=5;$i++){
-            echo "$i <br>";
-        }
+        // $arr = array("go", 2, "your", true, "place");
+        // for($i=0; $i<=count($arr);$i++){
+        //     echo "$arr[$i] <br>";
+        // }
     ?>
+
     <!-- Comments -->
+    <?php
+        // comment
+        /*
+            comment block
+        */
+    ?>
+    
     <!-- Including HTML -->
+    <?php
+    // include "header.html"
+    ?>
+    <!-- <p>Blah Blah</p> -->
+    <?php
+     //include "footer.html"
+    ?> 
+
     <!-- Include: PHP -->
     <!-- Classes & Objects -->
     <!-- Constructors -->
