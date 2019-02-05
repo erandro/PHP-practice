@@ -319,10 +319,118 @@
     ?> 
 
     <!-- Include: PHP -->
+    <?php
+        // include "tools.php";
+        // sayHi("Tim");
+
+        // $title = "Blog Post";
+        // $author = "Eran Dromy";
+        // $wordCount = 450;
+        // include "article-header.php"
+    ?>
+
     <!-- Classes & Objects -->
+    <?php
+        // class Dragon {
+        //     var $age;
+        //     var $type;
+        //     var $size; 
+        // }
+
+        // $fireDragon = new Dragon();
+        // $fireDragon->type = "fire";
+        // $fireDragon->age = 5800;
+        // $fireDragon->size = "huge";
+        // echo $fireDragon->age;
+    ?>
+        <!-- <br> -->
+    <?php
+        // $iceDragon = new Dragon();
+        // $iceDragon->type = "ice";
+        // $iceDragon->age = 3790;
+        // $iceDragon->size = "big";
+        // echo $iceDragon->age;
+    ?>
+
     <!-- Constructors -->
+    <?php
+        // class Dragon {
+        //     var $age;
+        //     var $type;
+        //     var $size;
+        //     function __construct($name){
+        //         echo "The dragon $name is near <br>";
+        //     }
+        // }
+
+        // $fireDragon = new Dragon("Drogo");
+        // $fireDragon->type = "fire";
+        // $fireDragon->age = 5800;
+        // $fireDragon->size = "huge";
+    ?>
+    
+    <?php
+    //     class Dragon {
+    //         var $name;
+    //         var $age;
+    //         var $type;
+    //         var $size;
+    //         function __construct($theName, $theAge, $theType, $theSize){
+    //             echo "The dragon $theName is near <br>";
+    //             $this->name = $theName;
+    //             $this->age = $theAge;
+    //             $this->type = $theType;
+    //             $this->size = $theSize;
+    //         }
+    //     }
+
+    //     $fireDragon = new Dragon("Drogo", 5800, "fire", "huge");
+    //     echo $fireDragon->age;
+    // ?>
+
     <!-- Object Functions - PHP - Tutorial 31 -->
+    <?php
+        // class Student {
+        //     var $name;
+        //     var $major;
+        //     var $gpa;
+        //     function __construct($name ,$major ,$gpa){
+        //         $this->name = $name;
+        //         $this->major = $major;
+        //         $this->gpa = $gpa;
+        //     }
+
+        //     function hasHonors(){
+        //         if ($this->gpa >= 3.5) {
+        //             return "true";
+        //         }
+        //         return "false";
+        //     }
+        // }
+
+        // $student1 = new Student ("Nick", "Architecture", 2.8);
+        // $student2 = new Student ("Pam", "Business", 3.6);
+    
+        // echo $student2->hasHonors();
+    ?>
+    
     <!-- Getters & Setters -->
+    <?php
+        class Movie {
+                public $title;
+                public $rating;
+                function __construct($title ,$rating){
+                    $this->title = $title;
+                    $this->rating = $rating;
+                }
+        }
+
+        $avangers = new Movie("Avangers", "PG-13");
+        
+        echo $avangers->rating;
+    
+    ?>
+
     <!-- Inheritance -->
 
 </body>
