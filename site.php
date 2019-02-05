@@ -416,22 +416,65 @@
     
     <!-- Getters & Setters -->
     <?php
-        class Movie {
-                public $title;
-                public $rating;
-                function __construct($title ,$rating){
-                    $this->title = $title;
-                    $this->rating = $rating;
-                }
-        }
+        // class Movie {
+        //         // this attribute is visible to any other code in my php- it's kind of like "var"
+        //         public $title;
+        //         // this attribute is accessible only inside the Movie class
+        //         private $rating;
+                
+        //         function __construct($title ,$rating){
+        //             $this->title = $title;
+        //             $this->setRating($rating);
+        //         }
+        //         function getRating() {
+        //             return $this->rating;
+        //         }
+        //         function setRating($rating){
+        //             if($rating === "G" || $rating === "PG" || $rating === "PG-13" || $rating === "R") {
+        //                 $this->rating = $rating;
+        //             } else {
+        //                 $this->rating = "NR";
+        //             }
+        //         }
+        // }
 
-        $avangers = new Movie("Avangers", "PG-13");
+        // $avangers = new Movie("Avangers", "R");
         
-        echo $avangers->rating;
-    
+        // // echo $avangers->rating; will not work since it's private
+        // echo $avangers->getRating();
+        // echo $avangers->setRating("dog");
+        // echo $avangers->getRating();
     ?>
 
     <!-- Inheritance -->
+    <?php
+        class Chef {
+            function makeChicken() {
+                echo "The chef made a Chicken dish";
+            }
+            function makeSalad() {
+                echo "The chef made a Salad dish";
+            }
+            function makeSpecial() {
+                echo "The chef made a Hummus dish";
+            }
+        }
+        class ItalianChef extends Chef {
+            function makePasts(){
+                echo "The chef made a Pasta dish";
+            }
+            function makeSpecial() {
+                echo "The chef made a Rizoto dish"; 
+            }
+        }
+
+        $chef = new Chef();
+        $chef->makeSpecial();
+
+        $italianChef = new ItalianChef();
+        $italianChef->makeSpecial();
+    ?>
+
 
 </body>
 </html>
